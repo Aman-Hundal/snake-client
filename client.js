@@ -24,7 +24,7 @@ const connect = function() {
   });
 
   return conn; //represents the connection you have with the server. This conn object will be used to handle msgs from the server. The above code done in the funciton helps TO SETUP THIS OBJECT FOR FUTURE
-};
+};// VERY GOOD NOTE-> notice that the above function returns conn which allows other functions and scripts to get access to it.
 
 // console.log("Connecting ...");
 // connect(); //sets up connection to the game server and interperts incoming text as UTF. Essentially does all at once. Previously we broke down setEncoding and createConnetion as their own functions and calls
