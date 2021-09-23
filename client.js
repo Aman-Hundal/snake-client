@@ -11,6 +11,7 @@ const connect = function() {
   conn.on("connect", () => {
     console.log("Connected to the game server. Have fun!");
     conn.write("Name: AMO"); // sends information to the server on connection. The server reads this format of Name: ___ and creates a name for you.
+    // conn.write("Move: up")
   });
 
   // interpret incoming data as text
@@ -21,7 +22,7 @@ const connect = function() {
     console.log('Server Says:', data);
   });
 
-  return conn; //represents the connection you have with the server. This conn object will be used to handle msgs from the server.
+  return conn; //represents the connection you have with the server. This conn object will be used to handle msgs from the server. The above code done in the funciton helps TO SETUP THIS OBJECT FOR FUTURE 
 };
 
 // console.log("Connecting ...");
