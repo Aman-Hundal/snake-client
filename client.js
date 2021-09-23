@@ -22,7 +22,7 @@ const connect = function() {
     console.log('Server Says:', data);
   });
 
-  return conn; //represents the connection you have with the server. This conn object will be used to handle msgs from the server. The above code done in the funciton helps TO SETUP THIS OBJECT FOR FUTURE 
+  return conn; //represents the connection you have with the server. This conn object will be used to handle msgs from the server. The above code done in the funciton helps TO SETUP THIS OBJECT FOR FUTURE
 };
 
 // console.log("Connecting ...");
